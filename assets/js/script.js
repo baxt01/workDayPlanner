@@ -44,3 +44,9 @@ myDay = [
     }
 ]
 
+// using dayjs to set the date in the header section.
+function setDateInHeader () {
+    var currentDate = dayjs().format("DD MMMM YYYY");
+    $("currentDay").text(currentDate);
+}
+
